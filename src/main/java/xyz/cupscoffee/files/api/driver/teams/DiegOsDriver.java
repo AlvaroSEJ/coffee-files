@@ -20,12 +20,8 @@ import java.util.stream.Collectors;
 
 public class DiegOsDriver implements SavDriver {
 
-    public DiegOsDriver() {
-
-    }
-
     @Override
-    public SavStructure readSavFile(FileInputStream fileInputStream) throws InvalidFormatFileException {
+    public SavStructure readSavFile(InputStream fileInputStream) throws InvalidFormatFileException {
 
         byte[] CONTENT_BUFFER;
 
